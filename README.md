@@ -16,10 +16,12 @@ Usage and Tips
 --------------
 
 To upload all image files inside a specific folder do:
+
 `./ul2szuru.sh *.png` or `./ul2szuru.sh *.webp`
 
 Upload all image files of a folder and all its containing subfolders do:
-`find "folder/with/images/" -type f -iname "\*.png" -or -iname "\*.webp" -or -iname "\*.jpg" -exec ul2szuru.sh {} \;`
+
+`find "folder/with/images/" -type f -iname "*.png" -or -iname "*.webp" -or -iname "*.jpg" -exec ul2szuru.sh {} \;`
 
 All leading and trailing whitespace characters of the prompt string will be removed.
 Every tag will be split at `,` and `.`. Plus characters `+` will be removed. Finally, every (recurring) space between each word in every tag will be substituted by an underscore `_`.
